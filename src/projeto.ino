@@ -1,4 +1,4 @@
-#include "DHTesp.h" // Incluindo a Biblioteca do ESP32 para Controlar o sensor de Temperatura e Humidade
+#include <DHTesp.h> // Incluindo a Biblioteca do ESP32 para Controlar o sensor de Temperatura e Humidade
 #include <LiquidCrystal_I2C.h> // Incluindo Biblioteca para Incluir um LCD no Projeto
 #define I2C_ADDR    0x27 // Definindo o endereço para a tela de LCD
 #define LCD_COLUMNS 20 // Quantidade de Colunas do LCD
@@ -45,11 +45,11 @@ void loop() {
   digitalWrite(Trig_pin,LOW);
   duration =pulseIn(Echo_pin,HIGH);
   dist_in_cm=duration*Speed_of_sound/2;
-  Serial.print("Distancia em cm: " + String(dist_in_cm));
+  Serial.print("Distancia em cm: " + String(dist_in_cm)+"\n");
 
   //Sensor LDR de Luminosidade
   int a=analogRead(LDRSensor);
-  Serial.println("\nLuminosidade: " + String(a) + " LUX");
+  Serial.println("Luminosidade: " + String(a) + " LUX");
 
   //Sensor PIR para Detecção de Movimento
   int IR1 = digitalRead(IRSensor);
