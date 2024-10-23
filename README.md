@@ -1,7 +1,19 @@
 # Capítulo 12 - A Eletrônica de uma IA
-O objetivo deste projeto é criar um sistema inteligente de monitoramento agrícola usando o microcontrolador ESP32 e quatro sensores diferentes simulado no Wokwi.com. O sistema será capaz de coletar dados do ambiente e tomar decisões automatizadas para otimizar o uso de recursos na agricultura, como a irrigação e o controle de condições climáticas.
+O objetivo deste projeto é criar um sistema inteligente de monitoramento agrícola usando o microcontrolador ESP32 e quatro sensores diferentes simulado no [Wokwi.com](wokwi.com).
 
-Building
+O sistema será capaz de coletar dados do ambiente e tomar decisões automatizadas para otimizar o uso de recursos na agricultura, como a irrigação e o controle de condições climáticas.
+
+## Funcionalidades:
+
+1. Monitoramento climático: com o DHT22, o sistema mede constantemente a umidade e temperatura do ambiente, enviando alertas ou tomando ações automáticas para aumentar ou diminuir a irrigação dependendo das condições.
+
+2. Controle de irrigação automatizada: o sensor HC-SR04 verifica o nível de água nos tanques e aciona a irrigação apenas quando o nível está adequado, evitando desperdício de água.
+
+3. Detecção de presença: o sensor PIR pode ser utilizado para detectar invasões de animais ou pessoas em áreas restritas da fazenda, ativando alarmes ou sistemas de segurança.
+
+4. Ajuste de irrigação com base na luminosidade: o sensor LDR mede a quantidade de luz solar recebida e ajusta a irrigação automaticamente, diminuindo a quantidade de água em dias mais ensolarados e aumentando em dias nublados.
+
+##Building
 Este é um projeto baseado no [PlatformIO](https://platformio.org/) e no [Wokwi.com](wokwi.com). 
 
 Para execução via VS Code deve-se instalar no VS Code:
