@@ -13,7 +13,7 @@ O sistema será capaz de coletar dados do ambiente e tomar decisões automatizad
 
 4. Ajuste de irrigação com base na luminosidade: o sensor LDR mede a quantidade de luz solar recebida e ajusta a irrigação automaticamente, diminuindo a quantidade de água em dias mais ensolarados e aumentando em dias nublados.
 
-##Building
+## Building
 Este é um projeto baseado no [PlatformIO](https://platformio.org/) e no [Wokwi.com](wokwi.com). 
 
 Para execução via VS Code deve-se instalar no VS Code:
