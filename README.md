@@ -17,10 +17,14 @@ O sistema será capaz de coletar dados do ambiente e tomar decisões automatizad
 Este é um projeto baseado no [PlatformIO](https://platformio.org/) e no [Wokwi.com](wokwi.com). 
 
 Para execução via VS Code deve-se instalar no VS Code:
-1. [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode) e;
-2. [PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html).
+1. [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode);
+2. [PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html);
 3. Executar o seguinte comando no Terminal:
 ```
 pio run
 ```
 4. Abrir o aquivo diagram.json e clicar em "Start Simulation"
+   
+![image](https://github.com/user-attachments/assets/90a7c46c-1f1e-4d73-b502-ebf1f07c462c)
+
+
