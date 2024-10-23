@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "author": "André Cunha",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 355.2, "left": 427.24, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 417.6,
+      "left": -104.1,
+      "rotate": 270,
+      "attrs": { "temperature": "32.6" }
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": 29.56, "left": 777.6, "attrs": {} },
+    { "type": "wokwi-gnd", "id": "gnd1", "top": 643.2, "left": 853.8, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": 87.9,
+      "left": 562.3,
+      "attrs": { "distance": "130" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd2",
+      "top": 44.8,
+      "left": 1061.6,
+      "attrs": { "pins": "i2c" }
+    },
+    { "type": "wokwi-pir-motion-sensor", "id": "pir1", "top": 32.8, "left": 395.82, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": 704, "left": -66.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "dht1:VCC", "green", [ "h0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "dht1:SDA", "esp:15", "blue", [ "h48", "v153.5", "h537.6", "v-105.6" ] ],
+    [ "esp:18", "ultrasonic1:ECHO", "green", [ "h0" ] ],
+    [ "esp:5", "ultrasonic1:TRIG", "orange", [ "h0" ] ],
+    [ "esp:3V3", "ultrasonic1:VCC", "red", [ "h-28.65", "v-211.2" ] ],
+    [ "esp:GND.1", "ultrasonic1:GND", "black", [ "h-47.85", "v86.4", "h279.6" ] ],
+    [ "lcd2:GND", "gnd1:GND", "black", [ "h0" ] ],
+    [ "lcd2:VCC", "vcc1:VCC", "red", [ "h0" ] ],
+    [ "lcd2:SDA", "esp:21", "yellow", [ "h-144", "v345.8" ] ],
+    [ "lcd2:SCL", "esp:22", "green", [ "h-76.8", "v307.5" ] ],
+    [ "pir1:VCC", "esp:3V3", "red", [ "h-38.4", "v259.2" ] ],
+    [ "pir1:GND", "esp:GND.2", "black", [ "h76.54", "v259.2" ] ],
+    [ "pir1:OUT", "esp:27", "green", [ "v28.8", "h-76.94", "v326.4" ] ],
+    [ "esp:3V3", "ldr1:VCC", "red", [ "h0" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h480", "v-346" ] ],
+    [ "ldr1:AO", "esp:33", "green", [ "h240", "v-298.3" ] ]
+  ],
+  "dependencies": {}
+}
