@@ -29,6 +29,8 @@ pio run
 ```
 4. Abrir o aquivo diagram.json e clicar em "Start Simulation"
 
+Outra opção mais simples seria a execução diretamente no portal da [Wokwi.com](wokwi.com). Basta copiar o arquivo projeto.ino dentro de src para a automação do ESP32 e o diagram.json para atualizar o desenho do circuito. Feito isso basta executar que o projeto será recompilado e os resultados apresentados no serial monitor.
+
 
 
 
