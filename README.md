@@ -23,7 +23,8 @@ Este é um projeto baseado no [PlatformIO](https://platformio.org/) e no [Wokwi.
 Sugere-se a execução via VS Code, onde deve-se instalar dentro da IDE:
 1. [Wokwi for VS Code](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode);
 2. [PlatformIO](https://docs.platformio.org/en/latest/core/installation/index.html);
-3. Executar o seguinte comando no Terminal do PlatformIO:
+3. Copiar os arquivos de projeto para o repositorio local do VS Studio;
+4. Executar o seguinte comando no Terminal do PlatformIO:
 ```
 pio run
 ```
