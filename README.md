@@ -5,10 +5,7 @@ O sistema será capaz de coletar dados do ambiente para tomada decisões automat
 
 ## Building
 ### Desenho do Circuito
-![image](https://github.com/user-attachments/assets/90a7c46c-1f1e-4d73-b502-ebf1f07c462c)
-
-
-![image](https://github.com/user-attachments/assets/40418769-7686-4910-8561-d9dd0ac018e1)
+![image](https://github.com/user-attachments/assets/f885aad5-6c1a-4068-bb46-514700606ae4)
 
 ## Papel de cada sensor no sistema:
 
