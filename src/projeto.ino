@@ -1,4 +1,4 @@
-#include <DHTesp.h> // Incluindo a Biblioteca do ESP32 para Controlar o sensor de Temperatura e Humidade
+#include <DHTesp.h> // Incluindo a Biblioteca do ESP32 para Controlar o sensor de Temperatura e Umidade
 #include <LiquidCrystal_I2C.h> // Incluindo Biblioteca para Incluir um LCD no Projeto
 #include <WiFi.h>
 
@@ -39,7 +39,7 @@ void setup() { // Setup inicial da placa ativando sensores, wifi, entre outros
 }
 
 void loop() { // Configuração do Loop de informações para monitorar constantemente o resultado dos sensores e jogar informações para o LCD do projeto
-  // Valores do Sensor DHT22 de Temperatura e Humidade
+  // Valores do Sensor DHT22 de Temperatura e Umidade
   TempAndHumidity  data = dhtSensor.getTempAndHumidity();
 
   // Valores do Sensor HC-SR04 de Distancia
